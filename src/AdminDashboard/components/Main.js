@@ -1,6 +1,7 @@
 import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import './Main.css'
 
 
 const Main = () => {
@@ -12,7 +13,7 @@ const Main = () => {
                         <div className='float-left d-flex justify-content-between'>
                             <div className=' '>
                                 {/* <img src='' alt='' width='20rem' height='2rem' className='img-fluid' /> */}
-                                <div style={{width:'50px', height:'50px', background:'blue', borderRadius:'50%', content:'a'}} />
+                                <div style={{width:'50px', height:'50px', background:'blue', borderRadius:'50%'}}>a</div>
 
                             </div>
                             <div className='ml-3'>
@@ -47,7 +48,7 @@ const Main = () => {
                                                 <h4>Total Page Views</h4>
                                             </div>
                                             <div className='float-right'>
-                                                kkk
+                                                ...
                                             </div>
                                         </div>
                                         <hr className='mt-5'/>
@@ -63,7 +64,7 @@ const Main = () => {
                                                 <h4>Total Page Views</h4>
                                             </div>
                                             <div className='float-right'>
-                                                kkk
+                                                ...
                                             </div>
                                         </div>
                                         <hr className='mt-5'/>
@@ -79,7 +80,7 @@ const Main = () => {
                                                 <h4>Total Page Views</h4>
                                             </div>
                                             <div className='float-right'>
-                                                kkk
+                                                ...
                                             </div>
                                         </div>
                                         <hr className='mt-5'/>
@@ -95,7 +96,7 @@ const Main = () => {
                                                 <h4>Total Page Views</h4>
                                             </div>
                                             <div className='float-right'>
-                                                kkk
+                                                ...
                                             </div>
                                         </div>
                                         <hr className='mt-5'/>
@@ -111,7 +112,7 @@ const Main = () => {
                                                 <h4>Total Page Views</h4>
                                             </div>
                                             <div className='float-right'>
-                                                kkk
+                                                ...
                                             </div>
                                         </div>
                                         <hr className='mt-5'/>
@@ -127,7 +128,7 @@ const Main = () => {
                                                 <h4>Total Page Views</h4>
                                             </div>
                                             <div className='float-right'>
-                                                kkk
+                                                ...
                                             </div>
                                         </div>
                                         <hr className='mt-5'/>
