@@ -8,12 +8,16 @@ const Sidebar = () => {
             <input type="checkbox" name="" id="nav-toggle"/>
     <div class="sidebar">
         <div class="sidebar-brand">
-            <h2>
-                <span class="las la-igloo"></span>
-            </h2>
+            
         </div>
         <div class="sidebar-menu">
             <ul>
+                <li>
+                    <div className="search-wrapper">
+                        <span class="las la-search"> </span>
+                        <input type="search" placeholder="Search here"/>
+                    </div>
+                </li>
                 <li>
                     <NavLink to="dashboard/" ><span class="las la-igloo"></span>
                     <span>Overview</span></NavLink>

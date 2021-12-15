@@ -2,9 +2,22 @@ import React from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './Main.css'
+import { LineChart, Line } from 'recharts';
+
+
+
+
+
+// const renderLineChart = (
+//     <LineChart width={400} height={400} data={data}>
+//       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+//     </LineChart>
+//   );
 
 
 const Main = () => {
+    const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400}];
+
     return (
         <main>
             <div className='container-fluid bg-light mt-4'>
@@ -13,7 +26,13 @@ const Main = () => {
                         <div className='float-left d-flex justify-content-between'>
                             <div className=' '>
                                 {/* <img src='' alt='' width='20rem' height='2rem' className='img-fluid' /> */}
-                                <div style={{width:'50px', height:'50px', background:'blue', borderRadius:'50%'}}>a</div>
+                                <div style={{width:'50px', height:'50px', background:'blue',positon:'relative', borderRadius:'50%'}}>
+                                    <span style={{
+                                        position:'absolute',
+                                        display:'block',
+                                        transform:'translate(50,50)'
+                                    }}>a</span>
+                                </div>
 
                             </div>
                             <div className='ml-3'>
@@ -71,6 +90,9 @@ const Main = () => {
                                         <div>
                                             <h3>23,568</h3>
                                             <p>Vs previous days 7 (28,211)</p>
+                                            <LineChart width={400} height={400} data={data}>
+                                             <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                                            </LineChart>
                                         </div>
 
                                     </div>
