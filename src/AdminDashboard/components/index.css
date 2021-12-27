@@ -133,6 +133,7 @@
      display: flex;
      align-items: center;
      overflow-x: hidden;
+     background: transparent !important;
  }
  .search-wrapper span{
      display: inline-block;

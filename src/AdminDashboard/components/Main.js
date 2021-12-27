@@ -13,12 +13,51 @@ import { LineChart, Line } from 'recharts';
 //       <Line type="monotone" dataKey="uv" stroke="#8884d8" />
 //     </LineChart>
 //   );
-
-
-const Main = () => {
+const TotalViews = (props) => {
     const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400}];
+    const { Title, value, details} = props;
 
-    return (
+    return(
+    <div className='col-md-4 p-3 border shadow '>
+        <div>
+            <div className='float-left'>
+                <h4>{Title}</h4>
+            </div>
+            <div className='float-right'>
+                ...
+            </div>
+        </div>
+        <hr className='mt-5'/>
+        <div>
+            <h3>{value}</h3>
+            <p>{details}</p>
+            <LineChart width={400} height={400} data={data}>
+                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+            </LineChart>
+        </div>
+
+    </div>
+    )
+
+}
+
+const Details = [
+     {
+        id:1, Title: 'Total Page Views', value: '23,568', details: 'Vs previous days 7 (28,211)'
+    },
+    {
+        id:2, Title: 'Total Page Views', value: '13,568', details: 'Vs previous days 7 (28,211)'
+    },
+    {
+        id:3, Title: 'Total Page Views', value: '23,568', details: 'Vs previous days 7 (28,211)'
+    }
+]
+
+// const filteredDetails = Details.filter( value=> {
+//     return value > 20000
+// })
+
+const Main = (props) => {    return (
         <main>
             <div className='container-fluid bg-light mt-4'>
                 <div className='row'>
@@ -60,111 +99,19 @@ const Main = () => {
 
                             <TabPanel>
                             <div className='container-fluid'>
-                                <div className='row mt-5'>
-                                    <div className='col-md-4 p-3 border shadow '>
-                                        <div>
-                                            <div className='float-left'>
-                                                <h4>Total Page Views</h4>
-                                            </div>
-                                            <div className='float-right'>
-                                                ...
-                                            </div>
-                                        </div>
-                                        <hr className='mt-5'/>
-                                        <div>
-                                            <h3>23,568</h3>
-                                            <p>Vs previous days 7 (28,211)</p>
-                                        </div>
-
-                                    </div>
-                                    <div className='col-md-4 p-3 border shadow '>
-                                        <div>
-                                            <div className='float-left'>
-                                                <h4>Total Page Views</h4>
-                                            </div>
-                                            <div className='float-right'>
-                                                ...
-                                            </div>
-                                        </div>
-                                        <hr className='mt-5'/>
-                                        <div>
-                                            <h3>23,568</h3>
-                                            <p>Vs previous days 7 (28,211)</p>
-                                            <LineChart width={400} height={400} data={data}>
-                                             <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-                                            </LineChart>
-                                        </div>
-
-                                    </div>
-                                    <div className='col-md-4 p-3 border shadow '>
-                                        <div>
-                                            <div className='float-left'>
-                                                <h4>Total Page Views</h4>
-                                            </div>
-                                            <div className='float-right'>
-                                                ...
-                                            </div>
-                                        </div>
-                                        <hr className='mt-5'/>
-                                        <div>
-                                            <h3>23,568</h3>
-                                            <p>Vs previous days 7 (28,211)</p>
-                                        </div>
-
-                                    </div>
-                                    <div className='col-md-4 p-3 border shadow '>
-                                        <div>
-                                            <div className='float-left'>
-                                                <h4>Total Page Views</h4>
-                                            </div>
-                                            <div className='float-right'>
-                                                ...
-                                            </div>
-                                        </div>
-                                        <hr className='mt-5'/>
-                                        <div>
-                                            <h3>23,568</h3>
-                                            <p>Vs previous days 7 (28,211)</p>
-                                        </div>
-
-                                    </div>
-                                    <div className='col-md-4 p-3 border shadow '>
-                                        <div>
-                                            <div className='float-left'>
-                                                <h4>Total Page Views</h4>
-                                            </div>
-                                            <div className='float-right'>
-                                                ...
-                                            </div>
-                                        </div>
-                                        <hr className='mt-5'/>
-                                        <div>
-                                            <h3>23,568</h3>
-                                            <p>Vs previous days 7 (28,211)</p>
-                                        </div>
-
-                                    </div>
-                                    <div className='col-md-4 p-3 border shadow '>
-                                        <div>
-                                            <div className='float-left'>
-                                                <h4>Total Page Views</h4>
-                                            </div>
-                                            <div className='float-right'>
-                                                ...
-                                            </div>
-                                        </div>
-                                        <hr className='mt-5'/>
-                                        <div>
-                                            <h3>23,568</h3>
-                                            <p>Vs previous days 7 (28,211)</p>
-                                        </div>
-
-                                    </div>
+                                <div className='row mt-5'>                                    
+                                    {Details.map((Detail) =>
+                                    <TotalViews key={Detail.id} Title={Detail.Title} value={Detail.value} details={Detail.details} />
+                                    )}                                    
                                 </div>
                             </div>
                             </TabPanel>
                             <TabPanel>
-                            <h2>Any content 2</h2>
+                                <TotalViews
+                                {
+                                    Details.filter(value => value > 60).map(filteredValue ( => {value})
+                                }
+                                />
                             </TabPanel>
                         </Tabs>
                     </div>
