@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import img from '../../assets/learn-img.jpg'
+import {Link} from 'react-router-dom'
 
 const About = () => {
   return (
@@ -12,7 +13,7 @@ const About = () => {
             <div class='col-md-6 col-sm-12 p-5'>
                 <h3 class='font-bold text-bold dispaly-6'>We focus on ergonomics and meeting you where you work.</h3>
                 <p class='mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est ipsum, semper a imperdiet et, egestas at quam. Donec ultrices justo vel ex tincidunt finibus.</p>
-                <button class='btn btn-grad rounded-pill'>Learn more</button>
+                <Link  to='about' class='btn btn-grad rounded-pill'>Learn more</Link>
             </div>
         </div>
     </div>

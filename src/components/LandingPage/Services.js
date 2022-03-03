@@ -1,6 +1,7 @@
 import React from 'react'
 // import 'pattern.css'
 import './style.css'
+import {Link} from 'react-router-dom'
 
 const Services = () => {
   return (
@@ -9,7 +10,7 @@ const Services = () => {
             <div class='col-md-4 col-sm-12 p-5'>
                 <h3 class='font-bold text-bold dispaly-6'>Explore the services we have for you.</h3>
                 <p class='mt-4 text-dark'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est ipsum, semper a imperdiet et, egestas at quam. Donec ultrices justo vel ex tincidunt finibus.</p>
-                <button class='btn btn-grad rounded-pill'>All services</button>
+                <Link  to='services' class='btn btn-grad rounded-pill'>All services</Link>
             </div>
             <div class='col-md-8 col-sm-12 p-5 service-bg'>
                 <div class='row justify-content-between'>
