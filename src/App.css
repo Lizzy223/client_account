@@ -29,7 +29,7 @@
     -webkit-text-fill-color: transparent;
   }
 
-  @media only screen and (max-width:560px){
+  @media only screen and (max-width:550px){
     .p-5{
         padding: 1rem !important;
     }
