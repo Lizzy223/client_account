@@ -1,33 +1,30 @@
 import {useState} from 'react';
+import Header from './components/LandingPage/Header';
 import Navbar from './components/Navbar/Navbar';
-import Details from './components/Pages/Details/Details';
-import Homepage from './components/Pages/Homepage';
-import Order from './components/Pages/Order/Order';
-import Password from './components/Pages/Password/Password';
-import Sidebar from './components/Sidebar/Sidebar';
-import { Route, Routes } from 'react-router-dom'
-import Address from './components/Pages/Address-book/Address';
+import './App.css'
+import About from './components/LandingPage/About';
+import Services from './components/LandingPage/Services';
+import Partners from './components/LandingPage/Partners';
+import Testimonial from './components/LandingPage/Testimonial';
+import Footer from './components/LandingPage/Footer';
+// import "swiper/css/bundle";
 
 const App = () => {
 
-const [sidebarOpen, setSidebarOpen] = useState(false);
 
-const openSidebar = () =>{
-  setSidebarOpen(true);
-}
-const closeSidebar = () =>{
-  setSidebarOpen(false);
-}
   return (
-    <div className="">
-      <h1>TenPlus</h1>
-      
-      <Sidebar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
-      <div className='main-content'>
-        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
+    <div className="">     
+    
+        <Navbar />
+        <Header/>
+        <About/>
+        <Services/>
+        <Partners/>
+        <Testimonial/>
+        <Footer/>
         
       
-      <Routes>
+      {/* <Routes>
         <Route exact path='/' element={<Homepage/>} />
         <Route exact path='/Details' element={<Details/>}/>
         <Route exact path='/Order' element={<Order/>}/>
@@ -37,8 +34,7 @@ const closeSidebar = () =>{
         <Route exact path='/Address-book' element={<Address/>}/>
         <Route exact path='/Change-password' element={<Password/>}/>
         <Route exact path='/Logout' element={<Order/>}/>
-      </Routes>
-      </div>
+      </Routes> */}     
     </div>
   );
 }
