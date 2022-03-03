@@ -1,0 +1,26 @@
+.about-us-header{
+    height: 75vh;
+    background-color: rgba(0, 255, 255, 0.555);
+    /* opacity: .4; */
+    padding: 5rem;
+}
+
+/* .about-img{
+    background-image: url('../../assets/lana.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+} */
+
+.team-img{
+    display: block;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    
+}
+
+@media only screen and ( max-width:560px){
+
+}
