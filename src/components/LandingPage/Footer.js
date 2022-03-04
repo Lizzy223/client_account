@@ -84,6 +84,10 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
+            <div clas='col-12 mt-2'>
+                <hr/>
+                <p class='text-center p-4'> &copy; Fintech 2022. All Rights Reserved. </p>
+            </div>
         </div>
     </div>
   )

@@ -21,7 +21,7 @@ const Navbar = () => {
             <NavLink class="nav-link" style={{color:'#000'}} to="/services">Services <span class="sr-only">(current)</span></NavLink>
             </li>
             <li class="nav-item">
-            <NavLink class="nav-link" style={{color:'#000'}} to="/">Contact <span class="sr-only">(current)</span></NavLink>
+            <NavLink class="nav-link" style={{color:'#000'}} to="/contact">Contact <span class="sr-only">(current)</span></NavLink>
             </li>
           </ul>
           <div class='nav-btn-res'>
