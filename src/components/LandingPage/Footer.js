@@ -5,8 +5,8 @@ import './style.css'
 const Footer = () => {
   return (
     <div class='container-fluid p-5 footer-img '>
-        <div class='row align-items-center justify-content-center'>
-            <div class='col-md-3 col-sm-6'>
+        <div class='row align-items-center text-center d-flex justify-content-center'>
+            <div class='col-md-3 col-sm-5'>
                 <ul>
                     <li>
                         <p class='text-bold'>Fingertips</p>
@@ -25,7 +25,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div class='col-md-3 col-sm-6'>
+            <div class='col-md-3 col-sm-5'>
                 <ul>
                     <li>
                         <p class='text-bold'>Resources</p>
@@ -44,7 +44,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div class='col-md-3 col-sm-6'>
+            <div class='col-md-3 col-sm-5'>
                 
                 <ul>
                     <li>
@@ -64,7 +64,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div class='col-md-3 col-sm-6'>
+            <div class='col-md-3 col-sm-5'>
                 
                 <ul>
                     <li>

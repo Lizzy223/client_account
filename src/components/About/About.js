@@ -19,7 +19,7 @@ const About = () => {
         <div class='row'>
             <div class='col-md-12 about-us-header align-items-center justify-content-center'>
                 <div class='about-img'>
-                    <h2 class='display-5  text-bold font-bold text-center mt-5'>Powering a new generation of businesses in Africa</h2>
+                    <h2 class='display-5  text-bold font-bold text-center mt-5'> About</h2>
                     <p class='mt-3 text-center'>We came from frustration with excessive bank charges (for inconsistent services), now we’re here.</p>
                  </div>
             </div>            
